@@ -19,11 +19,7 @@ Plug 'https://github.com/preservim/tagbar'              " Окно со стру
 call plug#end()
 
 
-
 """ Standart hotkeys
-
-" Ctrl-c save/exit
-noremap <C-c> :wq<CR>
 
 " Ctrl-s save
 inoremap <C-s> <esc>:w<CR>
