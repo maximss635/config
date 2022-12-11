@@ -8,6 +8,7 @@
 :set scrolloff=7
 :set encoding=UTF-8
 
+
 call plug#begin()
 Plug 'https://github.com/vim-airline/vim-airline'       " Нижняя полоса состояния
 Plug 'https://github.com/preservim/nerdtree'     	    " Проводник
@@ -16,8 +17,11 @@ Plug 'https://github.com/tc50cal/vim-terminal'          " Терминал
 Plug 'https://github.com/terryma/vim-multiple-cursors'	" Несколько курсоров
 Plug 'https://github.com/lewis6991/gitsigns.nvim'       " Интеграция с git
 Plug 'https://github.com/preservim/tagbar'              " Окно со структурой файла
+Plug 'https://github.com/hachy/eva01.vim'				" Цветовая схема
 call plug#end()
 
+""" Colorscheme
+colorscheme eva01
 
 """ Standart hotkeys
 
@@ -28,6 +32,9 @@ noremap <C-s> <esc>:w<CR>
 
 
 """ Text selection
+inoremap <S> v
+vnoremap <S> V
+nnoremap <S> v
 " Up
 inoremap <S-up> <c-o><S-v>k
 vnoremap <S-up> <up>
@@ -40,9 +47,13 @@ nnoremap <S-down> <S-v>j
 
 
 """ Copy/Past
-nnoremap <C-c> ^"+y$
-inoremap <C-c> <C-o>^"+y$
-vnoremap <C-c> "+ygv
+nnoremap <C-c> y
+inoremap <C-c> y
+vnoremap <C-c> y
+nnoremap <C-v> p
+inoremap <C-v> p
+vnoremap <C-v> p
+
 
 
 
