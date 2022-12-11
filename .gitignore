@@ -1,6 +1,6 @@
 *
 !.gitignore
-!nvim/init.vim
+!nvim/
 !i3/config
 !i3/i3status.conf
 !zsh/.zshrc
